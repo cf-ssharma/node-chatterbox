@@ -1,0 +1,148 @@
+/*CSS Reset*/
+*{
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+/* General styling */
+body{
+	font-family: 'Helvetica';
+	font-size: 16px;
+}
+
+div[role="main"]{
+	border: 2px solid black;
+	margin: 30px auto;
+	max-width: 800px;
+}
+
+header{
+	background: #ccc;
+	border-bottom: 2px solid black;
+	padding: 1em;
+}
+
+section#chat{
+	border-right: 1px solid black;
+	box-sizing: border-box;
+	float: left;
+	min-height: 350px;
+	padding: 1em;
+	position: relative;
+	width: 70%;
+}
+
+section#chat form#login{
+	background: rgba(0, 0, 0, .8);
+	color: white;
+	line-height: 325px;
+	position: absolute;
+	top: 51px;
+	text-align: center;
+	width: 527px;
+	z-index: 2;
+}
+
+section#chat form#login input{
+	border: none;
+	border-radius: 5px;
+	padding: 0.5em;
+	text-align: center;
+	width: 200px;
+}
+
+section#chat section#messages{
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin-top: 1em;
+	height: 325px;
+	overflow-y: scroll;
+	padding: 1em;
+}
+
+section#chat section#messages article{
+	border: 1px solid black;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 0.8em;
+	margin: 5px 0;
+	padding: 0.5em;
+}
+
+section#chat section#messages article.login{
+	background: #449C19;
+	color: white;
+}
+
+section#chat section#messages article.logout{
+	background: #FA5252;
+	color: white;
+}
+
+section#chat section#messages article:first-child{
+	margin-top: 0;
+}
+
+section#chat section#messages article:last-child{
+	margin-bottom: 0;
+}
+
+section#chat form#message{
+	background: #777;
+	border: 1px solid black;
+	border-top: none;
+	display: none;
+	padding: 0.5em;
+}
+
+section#chat form#message input{
+	border: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 0.5em;
+	width: 100%;
+}
+
+section#user_list{
+	background: #999;
+	border-left: 1px solid black;
+	box-sizing: border-box;
+	float: right;
+	min-height: 391px;
+	padding: 1em;
+	width: 30%;
+}
+
+section#user_list ul{
+	list-style-type: none;
+	margin-top: 1em;
+	max-height: 321px;
+	overflow-y: scroll;
+}
+
+section#user_list ul li{
+	background: #666;
+	border-radius: 5px;
+	color: #ccc;
+	font-size: 0.9em;
+	margin: 0.5em 0;
+	overflow: hidden;
+	padding: 0.3em;
+}
+
+section#user_list ul li:first-child{
+	margin-top: 0;
+}
+
+section#user_list ul li:last-child{
+	margin-bottom: 0;
+}
+
+footer{
+	background: #ccc;
+	border-top: 2px solid black;
+	clear: both;
+	padding: 1em;
+	text-align: right;
+}
